@@ -1,3 +1,6 @@
+#! /usr/bin/env node
+//above command to make node mycli.js global with name myutil
+//new object "bin" added in package.json and then npm link command executed
 //view --> tree or --> flat
 //organize --> media, apps, docs, others
 //help
@@ -26,7 +29,12 @@ switch(command){
         1. node mycli.js view <dirname> tree
         2. node mycli.js view <dirname> flat
         3. node mycli.js organize <dirname>
-        4. node mycli.js help`)
+        4. node mycli.js help
+        Note: You can also use the same commands in cmd using:
+         myutil help
+         myutil view <dirname> tree
+         myutil view <dirname> flat
+         myutil organize <dirname>  `)
         break;
     default:
         console.log("Wrong command, type help to see list of valid commands")
